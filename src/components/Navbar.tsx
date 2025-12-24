@@ -40,7 +40,7 @@ const Navbar = () => {
       <div className="container-custom flex items-center justify-between">
         <a
           href="#home"
-          className="text-xl font-bold gradient-text glow-text"
+          className="text-xl font-bold gradient-text glow-text hover:scale-110 transition-transform duration-300 cursor-pointer"
           onClick={(e) => {
             e.preventDefault();
             handleNavClick('#home');
@@ -69,7 +69,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden p-2 text-foreground hover:text-primary transition-colors"
+          className="md:hidden p-2 text-foreground hover:text-primary hover:scale-110 hover:rotate-90 transition-all duration-300 cursor-pointer"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
         >
