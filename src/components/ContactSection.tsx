@@ -26,20 +26,20 @@ const ContactSection = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'deekshithd.work@gmail.com',
-      href: 'mailto:deekshithd.work@gmail.com',
+      value: 'deekshi5168@gmail.com',
+      href: 'mailto:deekshi5168@gmail.com',
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      value: 'linkedin.com/in/deekshithd',
-      href: 'https://linkedin.com/in/deekshithd',
+      value: 'linkedin.com/in/deekshith-d11022005',
+      href: 'https://www.linkedin.com/in/deekshith-d11022005',
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+91 98765 43210',
-      href: 'tel:+919876543210',
+      value: '+91 63630 01288',
+      href: 'tel:+916363001288',
     },
   ];
 
@@ -83,7 +83,7 @@ const ContactSection = () => {
 
             <div className="mt-10 pt-8 border-t border-border text-center">
               <a
-                href="mailto:deekshithd.work@gmail.com"
+                href="mailto:deekshi5168@gmail.com"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-primary text-primary-foreground font-semibold hover:shadow-[0_0_30px_hsl(187_80%_50%_/_0.5)] transition-all duration-300 hover:-translate-y-1"
               >
                 <Send size={18} />
