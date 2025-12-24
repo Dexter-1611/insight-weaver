@@ -65,16 +65,16 @@ const ContactSection = () => {
                   href={contact.href}
                   target={contact.label === 'LinkedIn' ? '_blank' : undefined}
                   rel={contact.label === 'LinkedIn' ? 'noopener noreferrer' : undefined}
-                  className={`group flex flex-col items-center text-center p-6 rounded-xl hover:bg-secondary/50 transition-all duration-300 ${
+                  className={`group flex flex-col items-center text-center p-6 rounded-xl hover:bg-secondary/50 hover-lift ${
                     isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                   }`}
                   style={{ transitionDelay: `${300 + index * 100}ms` }}
                 >
-                  <div className="p-4 rounded-xl bg-primary/10 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300 mb-4">
+                  <div className="p-4 rounded-xl bg-primary/10 group-hover:bg-primary/20 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 mb-4">
                     <contact.icon className="w-6 h-6 text-primary" />
                   </div>
-                  <h3 className="font-semibold text-foreground mb-1">{contact.label}</h3>
-                  <p className="text-sm text-muted-foreground group-hover:text-primary transition-colors break-all">
+                  <h3 className="font-semibold text-foreground mb-1 group-hover:text-primary transition-colors duration-300">{contact.label}</h3>
+                  <p className="text-sm text-muted-foreground group-hover:text-primary transition-colors duration-300 break-all">
                     {contact.value}
                   </p>
                 </a>
@@ -84,9 +84,9 @@ const ContactSection = () => {
             <div className="mt-10 pt-8 border-t border-border text-center">
               <a
                 href="mailto:deekshi5168@gmail.com"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-primary text-primary-foreground font-semibold hover:shadow-[0_0_30px_hsl(187_80%_50%_/_0.5)] transition-all duration-300 hover:-translate-y-1"
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-primary text-primary-foreground font-semibold hover:shadow-[0_0_30px_hsl(187_80%_50%_/_0.5)] transition-all duration-300 hover:-translate-y-2 hover:scale-105 cursor-pointer"
               >
-                <Send size={18} />
+                <Send size={18} className="group-hover:rotate-12 transition-transform duration-300" />
                 Send a Message
               </a>
             </div>
